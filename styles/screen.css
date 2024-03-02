@@ -14,4 +14,15 @@ h1 {
 p {
     font-size: 2em;
     color: #EAE8FF;
+    margin-right: 20px;
+}
+
+button {
+    border-radius: 5px;
+    height: 50px;
+    width: 175px;
+}
+
+button:hover {
+    background-color: antiquewhite;
 }

@@ -1,4 +1,4 @@
-import Alpine from 'alpinejs';
+import Alpine from '/node_modules/alpinejs/dist/module.esm.js';
 
 Alpine.data('randomNameGenerator', () => ({
     names: ['David', 'Benny', 'Marcos', 'Abbie', 'Obed', 'Fernando', 'Tomas', 'Rodrigo', 'Minerva', 'Merari'],
