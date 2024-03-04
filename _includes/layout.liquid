@@ -6,20 +6,19 @@ title: Random Name Generator
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ Random Name Generator }}</title>
   <link rel="stylesheet" href="/styles/screen.css">
-  <script type="module" src="alpine.js" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="alpine.js"></script>
 </head>
 
 <body>
     <div x-data="NameGenerator">
       <h1>Random Name Generator</h1>
-      <button @click="generateName">Generate Random Name</button>
-      <h1 x-text="randomName"></h1>
-      
+      <h1 x-text="generateName">Name</h1> 
+      <button @click="generateName = generateName">Generate andom Name</button>
     </div>
 </body>
 

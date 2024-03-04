@@ -1,13 +1,12 @@
-import Alpine from '/node_modules/alpinejs/dist/module.esm.js';
 
-Alpine.data('NameGenerator', () => ({
-    names: ['David', 'Benny', 'Marcos', 'Abbie', 'Obed', 'Fernando', 'Tomas', 'Rodrigo', 'Minerva', 'Merari'],
-    randomName: '',
+function NameGenerator() {
+    const names = ['Olivia', 'Noah', 'Emma', 'Liam', 'Amelia', 'Oliver', 'Sophia', 'Elijah', 'Charlotte', 'Mateo', 'Jeff'];
 
-    generateName() {
-        const randomIndex = Math.floor(Math.random() * this.names.length);
-        this.randomName = this.names[randomIndex];
-    }
-}));
+    return {
 
-Alpine.start();
+    get generateName() {
+        return names[Math.floor(Math.random() * names.length)];
+        
+    },
+
+}}
